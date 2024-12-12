@@ -43,6 +43,7 @@ def save_datasets_to_file(datasets):
 if __name__ == "__main__":
     print("Fetching list of available datasets...")
     datasets = fetch_datasets()
+    os.makedirs("data/france", exist_ok=True)
     if datasets:
         save_datasets_to_file(datasets)
 
@@ -67,8 +68,9 @@ if __name__ == "__main__":
                     response = requests.get(url, params=params)
                     response.raise_for_status()  # Check for HTTP errors
 
+
                     # Save the CSV file
-                    with open(f"data/dataset_export_{dataset_id}.csv", "wb") as f:
+                    with open(f"data/france/dataset_export_{dataset_id}.csv", "wb") as f:
                         f.write(response.content)
 
                     print("Dataset successfully exported to CSV.")
