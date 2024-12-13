@@ -74,9 +74,9 @@ def handle_missing_data(data, numeric_columns, categorical_columns):
 # Main function to run the script
 def main():
     # File paths (hardcoded)
-    effectif_file = 'data/dataset_export_demographie-effectifs-et-les-densites.csv'
-    prescription_file = 'data/dataset_export_prescriptions.csv'
-    honoraire_file = 'data/dataset_export_honoraires-detailles.csv'
+    effectif_file = 'data/france/dataset_export_demographie-effectifs-et-les-densites.csv'
+    prescription_file = 'data/france/dataset_export_prescriptions.csv'
+    honoraire_file = 'data/france/dataset_export_honoraires-detailles.csv'
 
     print("Loading data...")
     # Load CSV files
