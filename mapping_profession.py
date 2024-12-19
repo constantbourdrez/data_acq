@@ -3,7 +3,7 @@ import csv
 import numpy as np
 import torch
 
-# Step 1: Load profession_sante and e_sante profession data
+
 profession_sante = [
     'Médecins généralistes (hors médecins à expertise particulière - MEP)',
     'Médecins généralistes à expertise particulière (MEP)',
@@ -46,7 +46,7 @@ for i, e_profession in enumerate(set(e_sante_professions)):
     similarity_score = similarities[i][best_match_idx].item()
     profession_mapping[e_profession] = (best_match, similarity_score)
 
-# Step 4: Print the mappings and save to file
+
 with open('profession_mapping.csv', mode='w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(['e_sante_profession', 'profession_sante', 'similarity_score'])

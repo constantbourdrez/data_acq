@@ -77,18 +77,18 @@ with open('data/doctor_dataset.csv', mode='w', newline='') as m_file:
                     # Merge rows
                     merged_row = {**e_sante_row, **ameli_row}
 
-                    # Normalize 'total' columns if they exist
+                  
                     for col in total_columns:
                         if col in merged_row and merged_row[col].replace('.', '', 1).isdigit():
                             merged_row[col] = str(float(merged_row[col]) / len(filtered_ameli_rows))
 
-                    # Write merged row to output
-                    writer.writerow(merged_row)
-                    break  # Move to next e_sante_row once a match is found
 
-            # Optionally, handle unmatched e_sante_row
+                    writer.writerow(merged_row)
+                    break
+
+
             if not found_match:
-                # Do something with unmatched rows if necessary
+
                 pass
 
 
