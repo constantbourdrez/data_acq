@@ -1,0 +1,17 @@
+e_sante_profession,profession_sante,similarity_score
+DE Infirmier,Médecins vasculaires,0.6206145882606506
+DE Pharmacien,Pédiatres,0.7151877880096436
+DE Infirmier de bloc opératoire,Médecins vasculaires,0.5669483542442322
+DE Chirurgien-Dentiste,Chirurgiens,0.7015510201454163
+DE Sage-Femme,Médecins vasculaires,0.3659015893936157
+DE Cadre de santé,Médecins vasculaires,0.7361655831336975
+DE Assistant de Service Social,Chirurgiens,0.3835119307041168
+DE Docteur en pharmacie,Médecins vasculaires,0.6865838766098022
+DE Infirmier anesthésiste,Anesthésistes-réanimateurs,0.7944528460502625
+DE Infirmier puériculteur,Pédiatres,0.6263150572776794
+DE Pédicure-Podologue,Néphrologues,0.6599882245063782
+DE Infirmier psychiatrique,Psychiatres,0.7795422673225403
+DE Masseur-Kinésithérapeute,Médecins pathologistes,0.6088451743125916
+DE Docteur en chirurgie dentaire,Médecins vasculaires,0.722255289554596
+DE Docteur en médecine,Ensemble des médecins,0.7896548509597778
+DE IPA maladie rénale,Médecins vasculaires,0.6820108890533447
